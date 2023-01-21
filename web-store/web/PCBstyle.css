@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.builder{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Box{
+    margin: 40px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 15px #4f4f4f;
+    transition: 0.5s; 
+}
+.Box p{
+    margin: 5px;
+}
+.Current{
+    height: 180px;
+    width:100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.Current img{
+    width:40%;
+    display:block;   
+}
+.Current p{
+    margin: 5px;
+}
+.ModalBuild{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+.ModalBuild img{
+    width:100px; 
+    height: 70px;
+}
+.Box button{
+    background:  #00bd32;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border: 2px solid  #02661d;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: -50px 0 0px 0;
+    transition: 0.5s;
+    transform: scaleY(1);
+
+}
+    
+.Box button:hover{
+    background: #003d11;
+    border: 2px solid  #00290b;
+}
+.remove{
+    width: 100%;
+}
+.Box .remove input[type = "submit"]{
+    background: #ba0202;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border: 2px solid  #d10202;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: -50px 0 0px 0;
+    transition: 0.5s;
+    transform: scaleY(0);
+
+}
+.Box:hover{
+    transform: scale(1.1);
+}
+.Box:hover .remove input[type = "submit"]{
+    transform: scaleY(1);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.ModalBuild  input[type = "submit"]{
+  background: #ba0202;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border: 2px solid #d10202;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 10px;
+  transition: 0.5s;
+}
+.ModalBuild  input[type = "submit"]:hover {
+  background: #5c0000;
+  border: 2px solid #5c0000;
+}
+
+.addtocart  input[type = "submit"]{
+  background: #ba0202;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border: 2px solid #d10202;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 10px;
+  transition: 0.5s;
+}
+.addtocart  input[type = "submit"]:hover {
+  background: #5c0000;
+  border: 2px solid #5c0000;
+}
+
+.TotalBox{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.TotalBox span{
+    margin:5px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

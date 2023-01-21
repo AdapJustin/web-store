@@ -1,0 +1,73 @@
+.tabcontent{
+    display: flex;
+    float:left;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.SortMenu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ItemSort input[type = "submit"]{
+  background: #ba0202;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border: 2px solid #d10202;
+  border-radius: 3px;
+  font-size: 10px;
+  margin: 10px;
+  transition: 0.5s;
+    
+}
+.ItemSort  input[type = "submit"]:hover {
+  background: #5c0000;
+  border: 2px solid #5c0000;
+  transform: scale(1.1);
+  
+}
+
+.ShopItem{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 15px #4f4f4f;
+    
+}
+.ShopItemForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.ShopItemForm input[type = "number"]{
+    padding: 12px;
+    margin: 10px;
+    
+}
+.ShopItemForm input[type=number]:hover::-webkit-inner-spin-button {  
+    width: 100px;
+    height: 30px;
+}
+.ShopItemForm  input[type = "submit"]{
+  background: #ba0202;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border: 2px solid #d10202;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 10px;
+  transition: 0.5s;
+}
+.ShopItemForm  input[type = "submit"]:hover {
+  background: #5c0000;
+  border: 2px solid #5c0000;
+}
